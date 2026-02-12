@@ -197,3 +197,7 @@ footer { border-top: 1px solid rgba(255,255,255,.08); }
     transform: none !important;
   }
 }
+/* Improve readability of muted text on dark background */
+.text-muted {
+  color: rgba(233, 238, 252, 0.85) !important; /* brighter, high contrast */
+}
