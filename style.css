@@ -201,3 +201,31 @@ footer { border-top: 1px solid rgba(255,255,255,.08); }
 .text-muted {
   color: rgba(233, 238, 252, 0.85) !important; /* brighter, high contrast */
 }
+/* --------- Accessibility: make card text readable --------- */
+
+/* Brighten all text inside dark cards */
+.card-soft,
+.card-soft .card-title,
+.card-soft p,
+.card-soft li,
+.card-soft span,
+.card-soft .small {
+  color: rgba(233, 238, 252, 0.96) !important;
+}
+
+/* Same for the glowing hero card */
+.card-glow,
+.card-glow .card-title,
+.card-glow p,
+.card-glow li,
+.card-glow span,
+.card-glow .small {
+  color: rgba(233, 238, 252, 0.96) !important;
+}
+
+/* Muted text should still be readable on dark background */
+.text-muted,
+.card-soft .text-muted,
+.card-glow .text-muted {
+  color: rgba(200, 210, 240, 0.9) !important;
+}
